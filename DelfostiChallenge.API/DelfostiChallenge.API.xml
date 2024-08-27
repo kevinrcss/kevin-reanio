@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelfostiChallenge.API</name>
+    </assembly>
+    <members>
+        <member name="M:DelfostiChallenge.API.Controllers.v1.AuthController.Login(DelfostiChallenge.DTO.DTOs.Auth.LoginDTO)">
+            <summary>
+            Permite autenticarse para obtener un token.
+            </summary>
+            <remarks>
+            **username:** kevin.rc@hotmail.com 
+            **password:** 123456
+            </remarks>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelfostiChallenge.API.Controllers.v1.PedidosController.Create(DelfostiChallenge.DTO.DTOs.Pedido.PedidoCreateDTO)">
+            <summary>
+            Crea un nuevo Pedido con los datos especificados.
+            </summary>
+            <remarks>
+            **Productos**
+            (Id = 1) Laptop Pro X1 | (Id = 2) Monitor UltraWide | (Id = 3) Teclado Mecánico RGB | (Id = 4) Smartphone 5G | (Id = 5) Laptop Económica | (Id = 6) Pack Teclado y Mouse Inalámbricos
+            **RepartidorId** = 2
+            </remarks>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelfostiChallenge.API.Controllers.v1.PedidosController.UpdateStatus(System.Int32,DelfostiChallenge.DTO.DTOs.Pedido.PedidoUpdateStatusDTO)">
+            <summary>
+            Actualiza el Estado de un Pedido. 
+            </summary>
+            <remarks>(Id = 1) **Por Atender** | (Id = 2) **En Proceso** | (Id = 3) **En Delivery** | (Id = 4) **Recibido** </remarks>
+            <param name="id"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelfostiChallenge.API.Extensions.Swagger.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DelfostiChallenge.API.Extensions.Swagger.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:DelfostiChallenge.API.Extensions.Swagger.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            Configures the Swagger document generation options for the provided SwaggerGenOptions object.
+            </summary>
+            <param name="options">The <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions"/> object to configure.</param>
+        </member>
+        <member name="M:DelfostiChallenge.API.Extensions.Swagger.ConfigureSwaggerOptions.CreateInfoForApiVersion(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)">
+            <summary>
+            Creates an <see cref="T:Microsoft.OpenApi.Models.OpenApiInfo"/> object containing information about the provided API version.
+            </summary>
+            <param name="description">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription"/> object to create the <see cref="T:Microsoft.OpenApi.Models.OpenApiInfo"/> object for.</param>
+            <returns>An <see cref="T:Microsoft.OpenApi.Models.OpenApiInfo"/> object containing information about the provided API version.</returns>
+        </member>
+        <member name="M:DelfostiChallenge.API.Extensions.Swagger.SwaggerExtension.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds Swagger documentation generation services to the specified service collection.
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> to add the Swagger documentation generation services to.</param>
+            <returns>The updated <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> with the Swagger documentation generation services added.</returns>
+        </member>
+    </members>
+</doc>
